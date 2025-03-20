@@ -1,0 +1,90 @@
+{
+    "title": "Game Development",
+    "image_folder": "images/portfolio/games",
+    "items": {
+        "acblackflag": {
+            "title": "Technical Director",
+            "line1": "1",
+            "line2": "2",
+            "line3": "3"
+        },
+        "acorigins": {
+            "title": "Technical Director",
+            "line1": "1",
+            "line2": "2",
+            "line3": "3"
+        },
+        "acrogue": {
+            "title": "Technical Director",
+            "line1": "1",
+            "line2": "2",
+            "line3": "3"
+        },
+        "acsyndicate": {
+            "title": "Technical Director",
+            "line1": "1",
+            "line2": "2",
+            "line3": "3"
+        },
+        "avengers": {
+            "title": "Technical Director",
+            "line1": "1",
+            "line2": "2",
+            "line3": "3"
+        },
+        "frontlines": {
+            "title": "Technical Director",
+            "line1": "1",
+            "line2": "2",
+            "line3": "3"
+        },
+        "fury": {
+            "title": "Technical Director",
+            "line1": "1",
+            "line2": "2",
+            "line3": "3"
+        },
+        "guiltygear": {
+            "title": "Technical Director",
+            "line1": "1",
+            "line2": "2",
+            "line3": "3"
+        },
+        "hwarang": {
+            "title": "Technical Director",
+            "line1": "1",
+            "line2": "2",
+            "line3": "3"
+        },
+        "megamind": {
+            "title": "Technical Director",
+            "line1": "1",
+            "line2": "2",
+            "line3": "3"
+        },
+        "skullandbones": {
+            "title": "Technical Director",
+            "line1": "1",
+            "line2": "2",
+            "line3": "3"
+        },
+        "spacemarine": {
+            "title": "Technical Director",
+            "line1": "1",
+            "line2": "2",
+            "line3": "3"
+        },
+        "sugarfarm": {
+            "title": "Technical Director",
+            "line1": "1",
+            "line2": "2",
+            "line3": "3"
+        },
+        "xd": {
+            "title": "Technical Director",
+            "line1": "1",
+            "line2": "2",
+            "line3": "3"
+        }
+    }
+}

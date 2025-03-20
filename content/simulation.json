@@ -1,0 +1,16 @@
+{
+    "title": "Simulator Development",
+    "image_folder": "images/portfolio/simulation",
+    "items": {
+        "ircm": {
+            "title": "Engineer",
+            "line1": "line 1 text",
+            "line2": "line 2 text"
+        },
+        "radar": {
+            "title": "Lead Engineer",
+            "line1": "line 1",
+            "line2": "line 2"
+        }
+    }
+}

@@ -12,7 +12,7 @@ from streamlit_option_menu import option_menu
 from aboutme import show_aboutme
 from certification import show_certification
 from education import show_education
-from jobhistory import show_jobhistory
+from portfolio import show_simulation, show_games
 from projects import show_projects
 from blog import show_blog
 
@@ -56,7 +56,8 @@ def show_sidebar():
         "About me": show_aboutme,
         "Projects": show_projects,
         "Certification": show_certification,
-        "Job History": show_jobhistory,
+        "Game Development": show_games,
+        "Simulator Development": show_simulation,
         "Education": show_education,
         "Blog": show_blog
     }
@@ -67,7 +68,7 @@ def show_sidebar():
         nav_tab_op = option_menu(
             menu_title="Michael Petrou",
             options=pages,
-            icons=['person-fill', 'files', 'file-text', 'person-square', 'mortarboard', 'pencil'],
+            icons=['person-fill', 'files', 'file-text', 'controller', 'airplane-engines', 'mortarboard', 'pencil'], # spare: 'person-square'
             menu_icon="file-earmark-text",
             default_index=0,
             styles={"nav-link": {"margin":"4px", "--hover-color": "#c99"}}
