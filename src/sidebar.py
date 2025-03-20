@@ -8,15 +8,14 @@ to different sections of the portfolio.
 
 import streamlit as st
 from streamlit_option_menu import option_menu
+from utils import load_image
 
 from aboutme import show_aboutme
 from certification import show_certification
-from education import show_education
 from portfolio import show_simulation, show_games
-from projects import show_projects
-from blog import show_blog
-
-from utils import load_image
+from genai_projects import show_genai_projects
+#from education import show_education
+#from blog import show_blog
 
 
 def show_sidebar():
@@ -53,14 +52,25 @@ def show_sidebar():
 
     # create the dictionary of navigation menu names and show_xxx functions
     nav_funcs = {
-        "About me": show_aboutme,
-        "Projects": show_projects,
+        "About Me": show_aboutme,
         "Certification": show_certification,
         "Game Development": show_games,
         "Simulator Development": show_simulation,
-        "Education": show_education,
-        "Blog": show_blog
+        "Gen AI Projects": show_genai_projects,
+#        "Education": show_education,
+#        "Blog": show_blog
     }
+
+    nav_icons=[
+        'person-fill',
+        'file-text', 
+        'controller', 
+        'airplane-engines', 
+        'files', 
+#        'mortarboard', 
+#        'pencil',
+       #'person-square'
+    ]
 
     # create the sidebar with the navigation menu
     with st.sidebar:
@@ -68,11 +78,24 @@ def show_sidebar():
         nav_tab_op = option_menu(
             menu_title="Michael Petrou",
             options=pages,
-            icons=['person-fill', 'files', 'file-text', 'controller', 'airplane-engines', 'mortarboard', 'pencil'], # spare: 'person-square'
+            icons=nav_icons,
             menu_icon="file-earmark-text",
             default_index=0,
             styles={"nav-link": {"margin":"4px", "--hover-color": "#c99"}}
         )
+
+    if nav_tab_op == "Gen AI Projects":
+        with st.sidebar:
+            pages = list(("a", "b"))
+            nav_tab_project = option_menu(
+                menu_title="Gen AI Projects",
+                options=pages,
+                #icons=nav_icons,
+                menu_icon="file-earmark-text",
+                default_index=0,
+                styles={"nav-link": {"margin":"4px", "--hover-color": "#c99"}}
+            )
+        st.session_state["genai_project"] = nav_tab_project
 
     # return the show_xxx function for the selected page
     for key, value in nav_funcs.items():

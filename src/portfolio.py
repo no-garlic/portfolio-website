@@ -35,7 +35,7 @@ def show_portfolio(json_filename):
         iterator = iter(data["items"].items())
 
         for pair in itertools.zip_longest(iterator, iterator, fillvalue=None):
-            col1, col2, col3, col4 = st.columns([0.075, 0.425, 0.075, 0.425])
+            unused_1, col1, col2, col3, col4, unused_2 = st.columns([0.05, 0.075, 0.375, 0.075, 0.375, 0.05])
 
             key_1 = pair[0][0]
             val_1 = pair[0][1]

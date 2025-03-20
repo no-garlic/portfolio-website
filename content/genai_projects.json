@@ -1,0 +1,61 @@
+{
+    "title": "Gen AI Projects",
+    "image_folder": "images/portfolio/certification",
+    "image_width": "320",
+    "items": {
+        "ibm_genai": {
+            "title": "**Who** What",
+            "link": "https://www.google.com",
+            "line1": "1",
+            "line2": "2",
+            "line3": "3"
+        },
+        "cs50_ai": {
+            "title": "HarvardX: CS50 Artificial Intelligence with Python",
+            "link": "https://www.google.com",
+            "line1": "1"
+        },
+        "ibm_llm": {
+            "title": "**Who** What",
+            "link": "https://www.google.com",
+            "line1": "1",
+            "line2": "2",
+            "line3": "3"
+        },
+        "dlai_maths": {
+            "title": "DeepLearning.AI: Mathematics for Machine Learning and Data Science",
+            "link": "https://www.google.com",
+            "line1": "1",
+            "line2": "2",
+            "line3": "3"
+        },
+        "genai_swe": {
+            "title": "**Who** What",
+            "link": "https://www.google.com",
+            "line1": "1",
+            "line2": "2",
+            "line3": "3"
+        },
+        "icl_maths": {
+            "title": "Imperial Coledge London: Mathematics for Machine Learning",
+            "link": "https://www.google.com",
+            "line1": "1",
+            "line2": "2",
+            "line3": "3"
+        },
+        "python": {
+            "title": "**Who** What",
+            "link": "https://www.google.com",
+            "line1": "1",
+            "line2": "2",
+            "line3": "3"
+        },
+        "smolagents": {
+            "title": "**Who** What",
+            "link": "https://www.google.com",
+            "line1": "1",
+            "line2": "2",
+            "line3": "3"
+        }
+    }
+}
