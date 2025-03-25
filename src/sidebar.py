@@ -15,6 +15,7 @@ from aboutme import show_aboutme
 from certification import show_certification
 from portfolio import show_simulation, show_games
 from education import show_education
+from genai_projects import show_genai_projects
 from jobs import show_jobs
 #from genai_projects import show_genai_projects
 #from blog import show_blog
@@ -55,11 +56,11 @@ def show_sidebar():
     # create the dictionary of navigation menu names and show_xxx functions
     nav_funcs = {
         "About Me": show_aboutme,
-        "Certification": show_certification,
+        "Certifications": show_certification,
         "Game Development": show_games,
         "Simulator Development": show_simulation,
         "Education": show_education,
-        "Jobs": show_education,
+        "Work History": show_education,
 #        "Gen AI Projects": show_genai_projects,
 #        "Blog": show_blog
     }
@@ -69,8 +70,8 @@ def show_sidebar():
         'file-text', 
         'controller', 
         'airplane-engines', 
-        'award-fill',
-        'calendar-plus',
+        'award',
+        'calendar',
 #        'files', 
 #        'pencil',
 #        'person-square'

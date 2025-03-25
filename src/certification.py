@@ -8,6 +8,7 @@ using Streamlit Antd Components for interactive visualization of certifications.
 import streamlit as st
 import json
 import itertools
+from utils import load_image, st_image_link, st_horizontal
 
 
 def show_certification():
@@ -28,25 +29,35 @@ def show_certification():
         st.header(page_title)
         st.markdown("---")
 
+        show_separator = False
         iterator = iter(data["items"].items())
 
         for pair in itertools.zip_longest(iterator, iterator, fillvalue=None):
-            unused_1, col1, col2, unused_2 = st.columns([0.05, 0.45, 0.45, 0.05])
+            unused_1, col1, unused_2, col2, unused_3 = st.columns([0.05, 0.4, 0.1, 0.4, 0.05])
 
             key_1 = pair[0][0]
             val_1 = pair[0][1]
             key_2 = pair[1][0]
             val_2 = pair[1][1]
-            
+                        
             with col1:
+                if show_separator:
+                    st.markdown("---")
+                st.markdown(f"## {val_1['org']}")
                 st.markdown(f"### {val_1['title']}")
-                st.image(f"{image_folder}/{key_1}.jpg", width=image_width)
+                
+                img = load_image(key_1, image_folder, extension="jpg")
+                st_image_link(img, link=val_1["certificate_link"], width=image_width, align="left")
                 
             with col2:
+                if show_separator:
+                    st.markdown("---")
+                st.markdown(f"## {val_2['org']}")
                 st.markdown(f"### {val_2['title']}")
-                st.image(f"{image_folder}/{key_2}.jpg", width=image_width)
+
+                img = load_image(key_2, image_folder, extension="jpg")
+                st_image_link(img, link=val_2["certificate_link"], width=image_width, align="left")
 
             st.markdown("###### ")
-
-
+            show_separator = True
 

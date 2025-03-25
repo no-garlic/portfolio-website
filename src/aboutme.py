@@ -15,5 +15,8 @@ def show_aboutme():
     Renders a header for the about me section in the Streamlit app.
     """
     with st.container(border=True):
+        st.header("About Me")
+        st.markdown("---")
+
         md = load_markdown("about_me")
         st.markdown(md)

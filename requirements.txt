@@ -6,4 +6,3 @@ streamlit-antd-components==0.3.2
 streamlit-lottie==0.0.5
 streamlit-option-menu==0.4.0
 streamlit-pdf-viewer==0.0.21
-st-social-media-links==0.1.4

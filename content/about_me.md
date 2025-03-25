@@ -1,5 +1,3 @@
-## About Me  
-
 I am a seasoned **Technical Director and AI specialist** with over **30 years of experience** in software development, primarily in the gaming industry. My career has been defined by **a deep focus on artificial intelligence in game development**, designing and implementing complex AI systems that bring virtual worlds to life.  
 
 I have led high-performance engineering teams, driven technological innovation, and delivered large-scale projects at world-renowned companies, including Ubisoft, THQ, and Keywords Studios. My expertise spans **Game AI, Game Engine Development, and Performance Optimization** for cross-platform blockbuster titles such as *Assassin’s Creed*, *Skull & Bones*, and *XDefiant*.  

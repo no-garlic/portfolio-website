@@ -41,14 +41,14 @@ HORIZONTAL_STYLE = """
 """
 
 
-def load_image(image_name: str, extension="jpeg") -> bytes:
+def load_image(image_name: str, path="", extension="jpeg") -> bytes:
     """
     Load an image and convert it to base64 format for use in HTML.
     :param image_name: Name of the image file (without extension)
     :param extension: Extension of the image file (default is jpeg)
     :return: Base64 encoded image content
     """
-    with open(f"images/{image_name}.{extension}", "rb") as img_file:
+    with open(f"images/{path}{image_name}.{extension}", "rb") as img_file:
         content = base64.b64encode(img_file.read()).decode()
         return content
 
@@ -78,3 +78,19 @@ def st_sidebar_horizontal():
     with st.sidebar.container():
         st.sidebar.markdown('<span class="hide-element horizontal-marker"></span>', unsafe_allow_html=True)
         yield
+
+
+def st_image_link(image, link, width=100, gap=25, sidebar=False, align="center"):
+    page_html=f"""
+        <div style="display: flex; align-items: center; justify-content: {align}; gap: {gap}px;">
+        <a href="{link}" target="_blank">
+            <img src="data:image/png;base64,{image}" width="{width}">
+        </a>
+        </div>
+        """
+    if sidebar:
+        st.sidebar.markdown(page_html, unsafe_allow_html=True)
+    else:
+        st.markdown(page_html, unsafe_allow_html=True)
+
+

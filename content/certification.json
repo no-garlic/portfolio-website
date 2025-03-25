@@ -1,61 +1,47 @@
 {
-    "title": "Certification",
-    "image_folder": "images/portfolio/certification",
-    "image_width": "640",
+    "title": "Recent Certifications",
+    "image_folder": "portfolio/certification/",
+    "image_width": "500",
     "items": {
         "ibm_genai": {
-            "title": "**Who** What",
-            "certificate_link": "https://www.google.com",
-            "line1": "1",
-            "line2": "2",
-            "line3": "3"
+            "org": "IBM",
+            "title": "Generative AI Engineering",
+            "certificate_link": "https://www.coursera.org/account/accomplishments/specialization/LZ1YLI64Q13N"
         },
         "cs50_ai": {
-            "title": "HarvardX: CS50 Artificial Intelligence with Python",
-            "certificate_link": "https://www.google.com",
-            "line1": "1"
+            "org": "HarvardX",
+            "title": "CS50 Artificial Intelligence with Python",
+            "certificate_link": "https://cs50.harvard.edu/certificates/c34315bd-b744-4331-b1c9-ffcfe94eadea"
         },
         "ibm_llm": {
-            "title": "**Who** What",
-            "certificate_link": "https://www.google.com",
-            "line1": "1",
-            "line2": "2",
-            "line3": "3"
+            "org": "IBM",
+            "title": "Generative AI Engineering with LLMs",
+            "certificate_link": "https://www.coursera.org/account/accomplishments/specialization/T95RZSTQE16A"
         },
         "dlai_maths": {
-            "title": "DeepLearning.AI: Mathematics for Machine Learning and Data Science",
-            "certificate_link": "https://www.google.com",
-            "line1": "1",
-            "line2": "2",
-            "line3": "3"
+            "org": "DeepLearning.AI",
+            "title": "Mathematics for Machine Learning and Data Science",
+            "certificate_link": "https://www.coursera.org/account/accomplishments/specialization/Q061QBENVB54"
         },
         "genai_swe": {
-            "title": "**Who** What",
-            "certificate_link": "https://www.google.com",
-            "line1": "1",
-            "line2": "2",
-            "line3": "3"
+            "org": "DeepLearning.AI",
+            "title": "Generative AI for Software Development",
+            "certificate_link": "https://www.coursera.org/account/accomplishments/specialization/NFZXUGLQ1XAN"
         },
         "icl_maths": {
-            "title": "Imperial Coledge London: Mathematics for Machine Learning",
-            "certificate_link": "https://www.google.com",
-            "line1": "1",
-            "line2": "2",
-            "line3": "3"
+            "org": "Imperial Coledge London",
+            "title": "Mathematics for Machine Learning",
+            "certificate_link": "https://www.coursera.org/account/accomplishments/specialization/OJ45SXQZCH9D"
         },
         "python": {
-            "title": "**Who** What",
-            "certificate_link": "https://www.google.com",
-            "line1": "1",
-            "line2": "2",
-            "line3": "3"
+            "org": "UDEMY",
+            "title": "Python Pro Bootcamp",
+            "certificate_link": "https://www.udemy.com/certificate/UC-577d4a96-c255-4072-87a2-042faa10ede7/"
         },
         "smolagents": {
-            "title": "**Who** What",
-            "certificate_link": "https://www.google.com",
-            "line1": "1",
-            "line2": "2",
-            "line3": "3"
+            "org": "Hugging Face",
+            "title": "Fundamentals of AI Agents",
+            "certificate_link": "https://huggingface.co/datasets/agents-course/certificates/resolve/main/certificates/no-garlic/2025-02-22.png"
         }
     }
 }
