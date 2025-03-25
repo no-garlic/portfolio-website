@@ -16,9 +16,12 @@
             "line1": "Certificate in Engineering (Electronics)"
         },
         "4": {
-            "title": "Seaview High School, 1987 - 1991",
-            "line1": "Year 12 Completed",
-            "line2": "Mathematics 1, Mathematics 2, Physics, Chemistry, Accounting"
+            "title": "Seaview High School, Year 12, 1991",
+            "line1": "Mathematics 1",
+            "line2": "Mathematics 2",
+            "line3": "Physics",
+            "line4": "Chemistry",
+            "line5": "Accounting"
         }
     },
     "other": {
@@ -36,6 +39,10 @@
         "3": {
             "title": "True Life Creations, 2003",
             "line1": "3DS Max Complete"
+        },
+        "4": {
+            "title": "Electricity Trust of SA, 1992 - 1995",
+            "line1": "Electronics Apprenticeship"
         }
     }
 }
