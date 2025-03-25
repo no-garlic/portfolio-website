@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 class SocialMediaIcons:
     def __init__(self, social_media_links=None, colors=None, size=25, gap=10):
         self.social_media_links = social_media_links
+        self.default_color = "#777777"
         self.default_colors = {
             r"buymeacoffee\.com": "#FFDD00",
             r"discord\.com": "#5865F2",
@@ -91,7 +92,7 @@ class SocialMediaIcons:
         for platform, svg in platforms.items():
             if re.search(platform, link):
                 # Use the provided color if available, otherwise use the default color
-                color = self.colors[self.social_media_links.index(link)] if link in self.social_media_links else default_color
+                color = self.colors[self.social_media_links.index(link)] if link in self.social_media_links else self.default_color
                 return svg.format(color=color, size=self.size)
         return None
         
