@@ -6,6 +6,39 @@ which are used throughout the Streamlit app.
 """
 
 import base64
+from contextlib import contextmanager
+import streamlit as st
+
+
+HORIZONTAL_STYLE = """
+<style class="hide-element">
+    /* Hides the style container and removes the extra spacing */
+    .element-container:has(.hide-element) {
+        display: none;
+    }
+    /*
+        The selector for >.element-container is necessary to avoid selecting the whole
+        body of the streamlit app, which is also a stVerticalBlock.
+    */
+    div[data-testid="stVerticalBlock"]:has(> .element-container .horizontal-marker) {
+        display: flex;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        align-items: baseline;
+    }
+    /* Buttons and their parent container all have a width of 704px, which we need to override */
+    div[data-testid="stVerticalBlock"]:has(> .element-container .horizontal-marker) div {
+        width: max-content !important;
+    }
+    /* Just an example of how you would style buttons, if desired */
+    /*
+    div[data-testid="stVerticalBlock"]:has(> .element-container .horizontal-marker) button {
+        border-color: red;
+    }
+    */
+</style>
+"""
 
 
 def load_image(image_name: str, extension="jpeg") -> bytes:
@@ -29,3 +62,19 @@ def load_markdown(content_name: str) -> str:
     with open(f"content/{content_name}.md", "r") as f:
         content = f.read()
         return content
+
+
+@contextmanager
+def st_horizontal():
+    st.markdown(HORIZONTAL_STYLE, unsafe_allow_html=True)
+    with st.container():
+        st.markdown('<span class="hide-element horizontal-marker"></span>', unsafe_allow_html=True)
+        yield
+
+
+@contextmanager
+def st_sidebar_horizontal():
+    st.sidebar.markdown(HORIZONTAL_STYLE, unsafe_allow_html=True)
+    with st.sidebar.container():
+        st.sidebar.markdown('<span class="hide-element horizontal-marker"></span>', unsafe_allow_html=True)
+        yield
