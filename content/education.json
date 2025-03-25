@@ -1,0 +1,41 @@
+{
+    "main_title": "Primary Education",
+    "other_title": "Other Training",
+    "main": {
+        "1": {
+            "title": "Open University",
+            "line1": "BSC Mathematics",
+            "line2": "Currently studying part time"
+        },
+        "2": {
+            "title": "TAFE (Onkaparinga), 1996 - 1998",
+            "line1": "Associate Diploma in Computer Programming"
+        },
+        "3": {
+            "title": "TAFE (Regency Park), 1992 - 1994",
+            "line1": "Certificate in Engineering (Electronics)"
+        },
+        "4": {
+            "title": "Seaview High School, 1987 - 1991",
+            "line1": "Year 12 Completed",
+            "line2": "Mathematics 1, Mathematics 2, Physics, Chemistry, Accounting"
+        }
+    },
+    "other": {
+        "1": {
+            "title": "Kaz Training Services (Aspect), 2002",
+            "line1": "Advanced C++"
+        },
+        "2": {
+            "title": "Game Institute, 2004 - 2010",
+            "line1": "Maths for Game Developers",
+            "line2": "Physics for Game Developers",
+            "line3": "DirectX 1 & 2",
+            "line4": "Lighting & Radiosity"
+        },
+        "3": {
+            "title": "True Life Creations, 2003",
+            "line1": "3DS Max Complete"
+        }
+    }
+}
