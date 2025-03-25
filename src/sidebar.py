@@ -56,11 +56,11 @@ def show_sidebar():
     # create the dictionary of navigation menu names and show_xxx functions
     nav_funcs = {
         "About Me": show_aboutme,
-        "Certifications": show_certification,
+        "GenAI Certifications": show_certification,
         "Game Development": show_games,
         "Simulator Development": show_simulation,
         "Education": show_education,
-        "Work History": show_education,
+        "Work History": show_jobs,
 #        "Gen AI Projects": show_genai_projects,
 #        "Blog": show_blog
     }

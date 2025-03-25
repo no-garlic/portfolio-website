@@ -6,6 +6,7 @@ showcasing academic background and educational achievements.
 """
 
 import streamlit as st
+from utils import load_markdown
 
 
 def show_education():
@@ -17,3 +18,6 @@ def show_education():
     with st.container(border=True):
         st.header("Education")
         st.markdown("---")
+
+        md = load_markdown("education")
+        st.markdown(md)
