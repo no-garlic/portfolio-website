@@ -94,3 +94,48 @@ def st_image_link(image, link, width=100, gap=25, sidebar=False, align="center")
         st.markdown(page_html, unsafe_allow_html=True)
 
 
+def show_section(section: dict, image_folder=None):
+    """
+    Render a section of education or experience items in Streamlit.
+    
+    Args:
+        section (dict or iterable): A collection of items to be displayed.
+    """
+    for key, item in section:
+        # Render the title
+        st.markdown(f"#### {item['title']}")
+        
+        # Collect detail lines
+        details = []
+        line_number = 1
+        while f'line{line_number}' in item:
+            details.append(item[f'line{line_number}'])
+            line_number += 1
+
+        # Format the details
+        formatted_details = "\n".join(f"- {line}" for line in details)
+
+        if image_folder:
+            c1, c2 = st.columns([0.2, 0.8])
+            with c1:
+                # Render the image
+                st.image(f"{image_folder}/{key}.jpg", use_column_width=True)
+            with c2:
+                # Render the subtitle
+                if "subtitle" in item:
+                    st.markdown(f"##### {item['subtitle']}")
+
+                # Render details as a markdown list if there are any
+                if len(formatted_details) > 0:
+                    st.markdown(formatted_details)
+        else:        
+            # Render the subtitle
+            if "subtitle" in item:
+                st.markdown(f"##### {item['subtitle']}")
+
+            # Render details as a markdown list if there are any
+            if len(formatted_details) > 0:
+                st.markdown(formatted_details)
+
+        # Add a small separator
+        st.markdown("###### ")

@@ -1,0 +1,60 @@
+{
+    "main_title": "Game Development",
+    "other_title": "Simulation, Application Programming, & Electronics",
+    "main": {
+        "1": {
+            "title": "Ubisoft Australia (May 2024 - Dec 2024)",
+            "subtitle": "Technical Director"
+        },
+        "2": {
+            "title": "Keyword Studios Australia (Apr 2023 - Apr 2024)",
+            "subtitle": "Technical Director"
+        },
+        "3": {
+            "title": "Wildlife Studios Australia (May 2021 - Mar 2023)",
+            "subtitle": "Studio Technical Director & Cofounder"
+        },
+        "4": {
+            "title": "Ubisoft Singapore (Dec 2012 - Feb 2021)",
+            "subtitle": "Technical Director, Expert Programmer, & Programming Architect"
+        },
+        "5": {
+            "title": "Moonlight Stuidios (Sep 2011 - Nov 2012)",
+            "subtitle": "Director & Programmer"
+        },
+        "6": {
+            "title": "THQ Studio Australia (Oct 2006 - Nov 2011)",
+            "subtitle": "Senior Programmer & Studio Director of Technology"
+        },     
+        "7": {
+            "title": "Auran Games (May 2004 - Oct 2006)",
+            "subtitle": "Senior Programmer & Lead Programmer"
+        }        
+    },
+    "other": {
+        "1": {
+            "title": "Sydac Engineering (2000 - 2004)",
+            "subtitle": "Senior Programmer & Lead Programmer"
+        },
+        "2": {
+            "title": "SACBH Ltd (1998 - 2000)",
+            "subtitle": "Software Object Architect & Programmer"
+        },
+        "3": {
+            "title": "Noarlunga TAFE (1998 - 1999)",
+            "subtitle": "Part Time Lecturer"
+        },
+        "4": {
+            "title": "Modern Software (1996 - 2003)",
+            "subtitle": "Programmer & Owner"
+        },
+        "5": {
+            "title": "Optus (1996 - 1998)",
+            "subtitle": "Service Technician"
+        },
+        "6": {
+            "title": "Electricity Trust of SA (1992 - 1995)",
+            "subtitle": "Apprentice Electronics Tradesperson"
+        }
+    }
+}

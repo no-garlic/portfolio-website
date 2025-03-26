@@ -8,32 +8,50 @@ showcasing professional experience and career trajectory.
 import streamlit as st
 import json
 import itertools
+from utils import show_section
 
 
 def show_games():
     show_portfolio("games.json")
 
+
 def show_simulation():
     show_portfolio("simulation.json")
 
+
 def show_portfolio(json_filename):
     """
-    Display the job history section of the portfolio.
-    
-    Renders a header for the job history section in the Streamlit app.
+    Display the job history section of the portfolio.    
     """
     with open(f"content/{json_filename}", "r") as file:
         data = json.load(file)
 
-    page_title = data["title"]
+    main_title = data["title"]
     image_folder = data["image_folder"]
 
     with st.container(border=True):
-        st.header(page_title)
+        st.header(main_title)
         st.markdown("---")
 
-        iterator = iter(data["items"].items())
+        data_list = list(data["items"].items())
+        
+        # Create dictionaries for the left and right columns
+        dict1 = dict(data_list[::2])
+        dict2 = dict(data_list[1::2])
 
+        # Create a 5-column layout with center-aligned main columns
+        unused_1, col1, unused_2, col2, unused_3 = st.columns([0.05, 0.4, 0.1, 0.4, 0.05])
+
+        # Render the two columns
+        with col1:
+            show_section(dict1.items(), image_folder=image_folder)
+        with col2:
+            show_section(dict2.items(), image_folder=image_folder)
+
+
+
+
+"""
         for pair in itertools.zip_longest(iterator, iterator, fillvalue=None):
             unused_1, col1, col2, col3, col4, unused_2 = st.columns([0.05, 0.075, 0.375, 0.075, 0.375, 0.05])
 
@@ -69,6 +87,6 @@ def show_portfolio(json_filename):
                 st.markdown(bullets)
 
             st.markdown("###### ")
-
+"""
 
 

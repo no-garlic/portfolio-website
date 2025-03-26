@@ -2,89 +2,124 @@
     "title": "Video Game Development",
     "image_folder": "images/portfolio/games",
     "items": {
-        "acblackflag": {
-            "title": "Technical Director",
-            "line1": "1",
-            "line2": "2",
-            "line3": "3"
-        },
-        "acorigins": {
-            "title": "Technical Director",
-            "line1": "1",
-            "line2": "2",
-            "line3": "3"
-        },
-        "acrogue": {
-            "title": "Technical Director",
-            "line1": "1",
-            "line2": "2",
-            "line3": "3"
-        },
-        "acsyndicate": {
-            "title": "Technical Director",
-            "line1": "1",
-            "line2": "2",
-            "line3": "3"
-        },
-        "avengers": {
-            "title": "Technical Director",
-            "line1": "1",
-            "line2": "2",
-            "line3": "3"
-        },
-        "frontlines": {
-            "title": "Technical Director",
-            "line1": "1",
-            "line2": "2",
-            "line3": "3"
-        },
-        "fury": {
-            "title": "Technical Director",
-            "line1": "1",
-            "line2": "2",
-            "line3": "3"
+        "xd": {
+            "title": "[Ubisoft] XDefiant",
+            "subtitle": "Studio Technical Director:",
+            "line1": "Strategic planning and forecasting for the studio, providing technical insights and expertise",
+            "line2": "Improved the technical processes, standards, pipelines, and efficiency",
+            "line3": "Owned cross-studio technical collaboration with the lead studio",
+            "line4": "Managed and mentored the lead programmers, and improved engineering team health"
         },
         "guiltygear": {
-            "title": "Technical Director",
-            "line1": "1",
-            "line2": "2",
-            "line3": "3"
-        },
-        "hwarang": {
-            "title": "Technical Director",
-            "line1": "1",
-            "line2": "2",
-            "line3": "3"
-        },
-        "megamind": {
-            "title": "Technical Director",
-            "line1": "1",
-            "line2": "2",
-            "line3": "3"
+            "title": "[Keyword Studios] Guilty Gear Strive (Nintendo Switch)",
+            "subtitle": "Technical Director:",
+            "line1": "Contributed to the technical investigation phase to evaluate the feasibility of the project",
+            "line2": "Porting an Unreal Engine 4 competitive AAA multiplayer fighting game to Nintendo Switch",
+            "line3": "My focus were the online systems and setting up the pipelines and DevOps for the project"
         },
         "skullandbones": {
-            "title": "Technical Director",
-            "line1": "1",
-            "line2": "2",
-            "line3": "3"
+            "title": "[Ubisoft] Skull and Bones",
+            "subtitle": "Programming Architect & Technical Director:",
+            "line1": "Lead the engine, rendering, and gameplay departments",
+            "line2": "Define the technical vision and technical roadmap for the project",
+            "line3": "Implemented open world gameplay systems and progression systems",
+            "line4": "Designed and implemented AI director and AI spawning systems",
+            "line5": "Architected the online data persistency strategy and framework",
+            "line6": "Lead a team to upgrade the game engine (mid-project)",
+            "line7": "Directed external collaboration studio programming teams with technical mandates",
+            "line8": "Fostered the relationship between art, design, and tech teams to align technical expectations"
+        },
+        "madsky": {
+            "title": "[Wildlife Studios] Dr Madsky's Monstrous World",
+            "subtitle": "Studio Technical Director & Cofounder:",
+            "line1": "Built the technical capability and team for the studio",
+            "line2": "Defined and built the core game architecture in Unity",
+            "line3": "Implemented a behaviour tree AI system & tools",
+            "line4": "Implemented character 3c's, and AI navigation, patrol paths, behaviours"
+        },
+        "acorigins": {
+            "title": "[Ubisoft] Assassin's Creed Origins",
+            "subtitle": "Programming Architect:",
+            "line1": "AI navigation and behaviour systems for ships",
+            "line2": "Ship traffic AI network avoidance system",
+            "line3": "Lead a deep technical investigation & decision on water rendering technology"
+        },
+        "acsyndicate": {
+            "title": "[Ubisoft] Assassin's Creed Syndicate",
+            "subtitle": "Technical Director:",
+            "line1": "Highly optimised vehicle traffic & gameplay systems",
+            "line2": "Character parkour between moving vehicles",
+            "line3": "Data oriented design & highly performant gameplay systems"
+        },
+        "acblackflag": {
+            "title": "[Ubisoft] Assassin's Creed Black Flag",
+            "subtitle": "Lead Engine Programmer & Technical Director:",
+            "line1": "Managed the engine team members & all lead programmers",
+            "line2": "Lead the continued development of ocean technology",
+            "line3": "Lead the middleware integration for a hierarchical fort destruction system"
+        },
+        "acrogue": {
+            "title": "[Ubisoft] Assassin's Creed Rogue",
+            "subtitle": "Expert Programmer:",
+            "line1": "Ocean ice systems for naval gameplay",
+            "line2": "Quad Tree based rendering and destruction system for enormous sheets of destructible ice",
+            "line3": "Character gameplay on destructible ice terrain"
+        },
+        "frontlines": {
+            "title": "[THQ] Frontlines: Fuel of War",
+            "subtitle": "Senior Programmer:",
+            "line1": "Worked on the PS3 port of the game with Unreal Engine 3",
+            "line2": "Input system and vehicle controls with PS3 Six-Axis motion sensor",
+            "line3": "Memory profiling and optimization",
+            "line4": "Save game and leaderboards"
+        },
+        "megamind": {
+            "title": "[THQ] Megamind: Ultimate Showdown",
+            "subtitle": "Lead Programmer & Senior Programmer:",
+            "line1": "Managed the gameplay team",
+            "line2": "Character animation & locomotion for player and enemies",
+            "line3": "Ranged combat and IK, Character & vehicle physics",
+            "line4": "Civilian crowd AI & navigation, boss AI"
+        },
+        "avengers": {
+            "title": "[THQ] The Avengers",
+            "subtitle": "Studio Director of Technology:",
+            "line1": "Managed, mentored, and established leads & managers",
+            "line2": "Manage relationships with middleware vendors and other THQ Studios",
+            "line3": "Drove the network architecture, tech budgets & pipelines",
+            "line4": "Owned the technical roadmap and technical risk management"
         },
         "spacemarine": {
-            "title": "Technical Director",
-            "line1": "1",
-            "line2": "2",
-            "line3": "3"
+            "title": "[THQ] Warhammer 40K: Space Marine",
+            "subtitle": "Technical Director:",
+            "line1": "Character animation & locomotion for player, enemies, and bosses",
+            "line2": "Ledge grab, cover, ranged combat, and IK",
+            "line3": "Multiplayer object replication, Boss AI, movement, and IK",
+            "line4": "AI Behavior system design, using both state-based and goal-based techniques"
+        },
+        "fury": {
+            "title": "[Auran]: Fury",
+            "subtitle": "Lead Programmer:",
+            "line1": "Managed the local programming team & a remote overseas programming team",
+            "line2": "Drove the MMO Network / Server Architecture and the build and data pipelines",
+            "line3": "Defined the database development and data version control process"
+        },
+        "hwarang": {
+            "title": "[Auran]: Hwarang",
+            "subtitle": "Senior Programmer:",
+            "line1": "Hardware geo-morphing terrain system",
+            "line2": "Dynamic terrain tessellation to support a high number of omnidirectional lights",
+            "line3": "Pre-baked shadow casting and lighting system for terrain",
+            "line4": "Data build pipeline",
+            "line5": "On-demand BSP tree intersection system for intersection testing",
+            "line6": "Enemy AI behaviour system and visual behaviour scripting tool"
         },
         "sugarfarm": {
-            "title": "Technical Director",
-            "line1": "1",
-            "line2": "2",
-            "line3": "3"
-        },
-        "xd": {
-            "title": "Technical Director",
-            "line1": "1",
-            "line2": "2",
-            "line3": "3"
+            "title": "[Moonlight Studios] Sugar Farm",
+            "subtitle": "Director & Programmer:",
+            "line1": "Farming simulator game for the Australian Cane Farmers Association",
+            "line2": "Sole programmer for the entire game",
+            "line3": "Built with Unity 3D"
         }
     }
 }

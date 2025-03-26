@@ -3,61 +3,71 @@
     "image_folder": "images/portfolio/simulation",
     "items": {
         "nswrail": {
-            "title": "SYDAC: NSW State Rail Train Driving Simulator (Lead Software Engineer)",
+            "title": "[SYDAC] NSW State Rail Train Driving Simulator",
+            "subtitle": "Lead Software Engineer:",
             "line1": "Developed the out of the window vision for 3 train driving simulators",
             "line2": "C and C++ on SGI IRIX using ONYX 2 and Octane 2 Hardware",
             "line3": "Developed a multi-threaded skeletal animation system and pipeline for SGI Performer"
         },
         "scenario": {
-            "title": "SYDAC: NSW State Rail Virtual Reality Theater Scenario (Lead Software Engineer)",
+            "title": "[SYDAC] NSW State Rail Virtual Reality Theater Scenario",
+            "subtitle": "Lead Software Engineer:",
             "line1": "Created a number of virtual scenarios for safety training",
             "line2": "C and C++ on SGI IRIX, SGI Performer, Multigen Vega, and BDI Peopleshop",
             "line3": "Developed multi-processor architecture for SGI ONYX 2 Hardware with 12 CPUs"
         },
         "trawler": {
-            "title": "SYDAC: Maritime Simulator (Senior Software Engineer)",
+            "title": "[SYDAC] Maritime Simulator",
+            "subtitle": "Senior Software Engineer:",
             "line1": "Trawler Boat driving and operational simulator",
             "line2": "Programming in Java, and C++, and OpenGL",
             "line3": "Worked with RMIT University on porting the 3D graphics to SGI Pereformer"
         },
         "westrail": {
-            "title": "SYDAC: Westrail Train Driving Simulator (Senior Software Engineer)",
+            "title": "[SYDAC] Westrail Train Driving Simulator",
+            "subtitle": "Senior Software Engineer:",
             "line1": "Simulated cabin gauges for locomotive dynamics using Java 2D graphics",
             "line2": "PLC Interface with an physical train cabin",
             "line3": "Distributed networking model across 6 nodes"
         },
         "sugar": {
-            "title": "SYDAC: Mackay Sugar Train Simulator (Lead Software Engineer)",
+            "title": "[SYDAC] Mackay Sugar Train Simulator",
+            "subtitle": "Lead Software Engineer:",
             "line1": "Out of the window vision for a train driving simulator",
             "line2": "Integrated with a physics model to optimize fuel usage based on locomotive configuration",
             "line3": "Developed with C++ and Multigen Vega Prime"
         },
         "radar": {
-            "title": "SYDAC: Radar and Electronic Warfare Simulator (Lead Software Engineer)",
+            "title": "[SYDAC] Radar and Electronic Warfare Simulator",
+            "subtitle": "Lead Software Engineer:",
             "line1": "Simulated 7 radar modes for the search and surveillance aircraft",
             "line2": "Owned the UML design & documentation",
             "line3": "Developed the simulator framework in C++ and Open Scenegraph"
         },
         "ircm": {
-            "title": "SYDAC: Infrared Counter-measure Simulator (Lead Software Engineer)",
+            "title": "[SYDAC] Infrared Counter-measure Simulator",
+            "subtitle": "Lead Software Engineer:",
             "line1": "Simulation of a virtual SAM tracking the engine plume of an aircraft",
             "line2": "Allowed development and test of counter-measure image processing algorithms",
             "line3": "C++ and OpenGL synchronized across 4 Pc nodes"
         },
         "vts": {
-            "title": "SYDAC: Virtual Threat Simulator (Lead Software Engineer)",
+            "title": "[SYDAC] Virtual Threat Simulator",
+            "subtitle": "Lead Software Engineer:",
             "line1": "A virtual environment to operate a Mock Surface-To-Air Missile Launcher (SAM)",
             "line2": "C++ and SGI OpenGL Performer, Networked across 6 Pc nodes",
             "line3": "Interfaced with 6 DOF VR Headset & 6 DOF Sensor on the Mock SAM"
         },
         "topcon": {
-            "title": "Topcon Positioning Systems: Excavator Monitor (Software Engineer)",
+            "title": "[Topcon Positioning Systems] Excavator Monitor",
+            "subtitle": "Software Engineer:",
             "line1": "3D Monitor of operating an excavator using Unity Game Engine",
             "line2": "Communicated via TCP & UDP with GPS sensors mounted on the excavator",
             "line3": "Realtime visualization of all moving parts of the excavator"
         },
         "euclideon": {
-            "title": "Euclideon: Unlimited Detail (Senior Programmer)",
+            "title": "[Euclideon] Unlimited Detail",
+            "subtitle": "Senior Programmer:",
             "line1": "Voxel based renderer for large point cloud datasets",
             "line2": "Contributed to the data pipeline and supporting tools",
             "line3": "C, C++, and C#"

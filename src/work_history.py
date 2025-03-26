@@ -10,12 +10,14 @@ import json
 from utils import show_section
 
 
-def show_education():
+def show_work_history():
     """
     Display the education section of the portfolio.
+    
+    Renders a header for the education section in the Streamlit app.
     """
     # Load education data from JSON file
-    with open(f"content/education.json", "r") as file:
+    with open(f"content/work_history.json", "r") as file:
         data = json.load(file)
 
     # Extract main and section titles

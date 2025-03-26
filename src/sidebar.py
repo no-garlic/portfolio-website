@@ -9,16 +9,15 @@ to different sections of the portfolio.
 import streamlit as st
 from streamlit_option_menu import option_menu
 from social_media import SocialMediaIcons
-from utils import load_image, st_sidebar_horizontal
+from utils import load_image
 
 from aboutme import show_aboutme
 from certification import show_certification
 from portfolio import show_simulation, show_games
 from education import show_education
 from genai_projects import show_genai_projects
-from jobs import show_jobs
+from work_history import show_work_history
 #from genai_projects import show_genai_projects
-#from blog import show_blog
 
 
 def show_sidebar():
@@ -30,7 +29,7 @@ def show_sidebar():
     # load the image of mike
     mike_img = load_image("mike")
 
-    # create a style where the image is masked out under a circle
+    # create a css style where the image is masked out under a circle
     mike_img_html = f"""
         <style>
         .logo-container {{
@@ -59,10 +58,9 @@ def show_sidebar():
         "GenAI Certifications": show_certification,
         "Game Development": show_games,
         "Simulator Development": show_simulation,
+        "Work History": show_work_history,
         "Education": show_education,
-        "Work History": show_jobs,
 #        "Gen AI Projects": show_genai_projects,
-#        "Blog": show_blog
     }
 
     nav_icons=[
@@ -70,8 +68,8 @@ def show_sidebar():
         'file-text', 
         'controller', 
         'airplane-engines', 
-        'award',
         'calendar',
+        'award',
 #        'files', 
 #        'pencil',
 #        'person-square'
@@ -97,7 +95,6 @@ def show_sidebar():
             nav_tab_project = option_menu(
                 menu_title="Gen AI Projects",
                 options=pages,
-                #icons=nav_icons,
                 menu_icon="file-earmark-text",
                 default_index=0,
                 styles={"nav-link": {"margin":"4px", "--hover-color": "#c99"}}
