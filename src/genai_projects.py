@@ -31,13 +31,15 @@ def show_genai_projects():
     image_width = int(data["image_width"])
     
     with st.container(border=True):
-        st.header(page_title)
-        st.markdown("---")
+        padding_left, content, padding_right = st.columns([0.025, 0.95, 0.025])
+        with content:
+            st.header(page_title)
+            st.markdown("---")
 
         index = 0
         iterator = iter(data["items"].items())
         for pair in itertools.zip_longest(iterator, iterator, iterator, fillvalue=None):
-            columns = st.columns([0.05, 0.3, 0.3, 0.3, 0.05])
+            columns = st.columns([0.025, 0.3, 0.35, 0.3, 0.025])
 
             for i in range(3):
                 with columns[i + 1]:

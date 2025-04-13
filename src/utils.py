@@ -119,7 +119,7 @@ def show_section(section: dict, image_folder=None):
             c1, c2 = st.columns([0.2, 0.8])
             with c1:
                 # Render the image
-                st.image(f"{image_folder}/{key}.jpg", use_column_width=True)
+                st.image(f"{image_folder}/{key}.jpg", use_container_width=True)
             with c2:
                 # Render the subtitle
                 if "subtitle" in item:

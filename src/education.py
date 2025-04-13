@@ -25,10 +25,10 @@ def show_education():
     # Create a container with a border
     with st.container(border=True):
         # Create a 5-column layout with center-aligned main columns
-        unused_1, col1, unused_2, col2, unused_3 = st.columns([0.05, 0.4, 0.1, 0.4, 0.05])
+        padding_left, column_left, padding_middle, column_right, padding_right = st.columns([0.025, 0.4, 0.05, 0.4, 0.025])
 
         # Render main education column
-        with col1:
+        with column_left:
             st.markdown(f"## {main_title}")
             st.markdown("---")
 
@@ -36,7 +36,7 @@ def show_education():
             show_section(main.items())
 
         # Render other education column
-        with col2:
+        with column_right:
             st.markdown(f"## {other_title}")
             st.markdown("---")
 

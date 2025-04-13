@@ -26,21 +26,23 @@ def show_certification():
     image_width = int(data["image_width"])
     
     with st.container(border=True):
-        st.header(page_title)
-        st.markdown("---")
+        padding_left, content, padding_right = st.columns([0.025, 0.95, 0.025])
+        with content:
+            st.header(page_title)
+            st.markdown("---")
 
         show_separator = False
         iterator = iter(data["items"].items())
 
         for pair in itertools.zip_longest(iterator, iterator, fillvalue=None):
-            unused_1, col1, unused_2, col2, unused_3 = st.columns([0.05, 0.4, 0.1, 0.4, 0.05])
-
+            padding_left, column_left, padding_middle, column_right, padding_right = st.columns([0.025, 0.4, 0.05, 0.4, 0.025])
+    
             key_1 = pair[0][0]
             val_1 = pair[0][1]
             key_2 = pair[1][0]
             val_2 = pair[1][1]
                         
-            with col1:
+            with column_left:
                 if show_separator:
                     st.markdown("---")
                 st.markdown(f"## {val_1['org']}")
@@ -49,7 +51,7 @@ def show_certification():
                 img = load_image(key_1, image_folder, extension="jpg")
                 st_image_link(img, link=val_1["certificate_link"], width=image_width, align="left")
                 
-            with col2:
+            with column_right:
                 if show_separator:
                     st.markdown("---")
                 st.markdown(f"## {val_2['org']}")
